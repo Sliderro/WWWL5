@@ -1,0 +1,91 @@
+:root {
+    --section-color-1: #187220;
+    --section-color-2: #185420;
+    --background-color: #189020;
+  }
+  
+  html {
+    width: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding-inline: 50px;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 18px; */
+    text-align: justify;
+  }
+  
+  main {
+    max-width: 400px;
+  }
+  
+  nav {
+    flex-direction: column;
+    display: flex;
+  }
+  
+  @media only screen and (min-width: 720px) {
+    main {
+      max-width: 600px;
+    }
+    nav {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    main {
+      max-width: 80%;
+    }
+    nav {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  
+  #title h1 {
+    width: max-content;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+    padding-block: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--section-color-2);
+  }
+  
+  nav a {
+    color: white;
+  }
+  
+  section {
+    padding-block-end: 25px;
+    background-color: var(--section-color-1);
+  }
+
+  section:nth-of-type(2n){
+    background-color: var(--section-color-2);
+  }
+  
+  section > header > h2 {
+    margin-top: 50px;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  #icons {
+    display: flex;
+    justify-content: space-between;
+  }
